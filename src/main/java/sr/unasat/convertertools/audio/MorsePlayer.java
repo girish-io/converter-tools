@@ -11,7 +11,7 @@ public class MorsePlayer {
     private static final int SHORT_TONE_MS = 100;
     private static final int LONG_TONE_MS = 200;
 
-    private final TonePlayer tonePlayer;// = new TonePlayer(SAMPLE_RATE, CHANNELS);
+    private final TonePlayer tonePlayer;
 
     public MorsePlayer() {
         try {

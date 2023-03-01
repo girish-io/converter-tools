@@ -103,6 +103,11 @@
     -fx-background-insets: 0;
 }
 
+#translationResult .content {
+    -fx-background-radius: 15;
+    -fx-background-color: -text-field-bg-color;
+}
+
 .text-area:disabled .scroll-pane {
     -fx-hbar-policy: never;
     -fx-vbar-policy: as-needed;
@@ -138,4 +143,9 @@
 
 .translation-box {
     -fx-min-height: 100px;
+}
+
+#versionLabel {
+    -fx-text-fill: -text-color;
+    -fx-opacity: 0.6;
 }

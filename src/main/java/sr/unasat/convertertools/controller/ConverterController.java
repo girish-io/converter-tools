@@ -6,9 +6,11 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.Label;
 import javafx.scene.control.TextArea;
 import javafx.scene.layout.HBox;
 import sr.unasat.convertertools.audio.MorsePlayer;
+import sr.unasat.convertertools.constants.ApplicationInfo;
 import sr.unasat.convertertools.constants.TranslationOption;
 import sr.unasat.convertertools.converter.*;
 
@@ -18,6 +20,10 @@ import java.util.List;
 import java.util.ResourceBundle;
 
 public class ConverterController implements Initializable {
+
+    @FXML
+    private Label versionLabel;
+
     @FXML
     private TextArea translationInput;
 
@@ -59,6 +65,8 @@ public class ConverterController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        versionLabel.setText(ApplicationInfo.VERSION);
+
         translationInput.textProperty()
                 .addListener((obs, oldText, newText) -> translate());
 
