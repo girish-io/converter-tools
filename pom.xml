@@ -6,7 +6,7 @@
 
     <groupId>sr.unasat</groupId>
     <artifactId>convertertools</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <name>Converter Tools</name>
 
     <properties>
