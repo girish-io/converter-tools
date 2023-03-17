@@ -8,8 +8,8 @@ public class MorsePlayer {
     private static final int CHANNELS = 1;
     private static final double VOLUME = 1.0;
 
-    private static final int SHORT_TONE_MS = 100;
-    private static final int LONG_TONE_MS = 200;
+    private static int SHORT_TONE_MS = 100;
+    private static int LONG_TONE_MS = 200;
 
     private final TonePlayer tonePlayer;
 
@@ -43,5 +43,21 @@ public class MorsePlayer {
 
     public void stop() {
         tonePlayer.stop();
+    }
+
+    public static int getShortToneMs() {
+        return SHORT_TONE_MS;
+    }
+
+    public static void setShortToneMs(int shortToneMs) {
+        SHORT_TONE_MS = shortToneMs;
+    }
+
+    public static int getLongToneMs() {
+        return LONG_TONE_MS;
+    }
+
+    public static void setLongToneMs(int longToneMs) {
+        LONG_TONE_MS = longToneMs;
     }
 }

@@ -149,3 +149,22 @@
     -fx-text-fill: -text-color;
     -fx-opacity: 0.6;
 }
+
+#swapButton {
+    -fx-background-color: rgba(206, 221, 233, 0.2);
+}
+
+#clearButton {
+    -fx-background-color: rgba(206, 221, 233, 0.2);
+}
+
+.credits-button {
+    -fx-min-height: 2px;
+    -fx-min-width: 5px;
+}
+
+.help-button {
+    -fx-min-height: 2px;
+    -fx-min-width: 5px;
+    -fx-background-color: rgba(206, 221, 233, 0.2);
+}
